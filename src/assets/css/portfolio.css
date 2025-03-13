@@ -208,6 +208,10 @@
     margin: auto;
     gap: 20px;
 }
+.exp-cvr {
+    display: flex;
+    gap: 30px;
+}
 
 /* resume */
 .download_resume {
