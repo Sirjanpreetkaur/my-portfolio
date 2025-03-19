@@ -3,6 +3,7 @@ import Header from "../components/header";
 import Skills from "../components/skills";
 import Resume from "../components/resume";
 import Experience from "../components/experience";
+import Projects from "../components/projects";
 
 const PortfolioWebsite = () => {
   return (
@@ -13,6 +14,7 @@ const PortfolioWebsite = () => {
         <Experience />
         <Resume />
       </div>
+      <Projects/>
     </div>
   );
 };
