@@ -4,6 +4,7 @@ import Skills from "../components/skills";
 import Resume from "../components/resume";
 import Experience from "../components/experience";
 import Projects from "../components/projects";
+import StaticPart from "../components/staticPart";
 
 const PortfolioWebsite = () => {
   return (
@@ -15,6 +16,7 @@ const PortfolioWebsite = () => {
         <Resume />
       </div>
       <Projects/>
+      <StaticPart/>
     </div>
   );
 };
