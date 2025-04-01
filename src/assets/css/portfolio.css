@@ -402,3 +402,39 @@ address {
     right: -160px;
     width: 56px;
 }
+/* welcome strip */
+.welcome-strip {
+    padding: 12px 0px;
+    opacity: 1;
+    transition: opacity 1s ease, transform 1s ease;
+    transform: translateY(0);
+}
+
+.welcome-strip.fade-out {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.welcome-strip h2 {
+    display: block;
+    width: 100%;
+}
+
+.welcome-strip h3 {
+    display: block;
+    width: 100%;
+}
+
+.welcome-strip h2,
+.welcome-strip h3 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.welcome-strip h2.fade-in,
+.welcome-strip h3.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
