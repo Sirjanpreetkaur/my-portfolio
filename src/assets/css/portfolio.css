@@ -437,4 +437,6 @@ address {
     opacity: 1;
     transform: translateY(0);
 }
-
+.website-footer {
+    padding: 20px 0;
+}

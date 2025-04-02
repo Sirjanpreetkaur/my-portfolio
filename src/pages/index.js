@@ -7,6 +7,7 @@ import Projects from "../components/projects";
 import StaticPart from "../components/staticPart";
 import ContactMe from "../components/contactMe";
 import WelcomeStrip from "../components/welcomeStrip";
+import PortfolioFooter from "../components/portfolioFooter";
 
 const PortfolioWebsite = () => {
   const [company, setCompany] = useState("");
@@ -44,6 +45,7 @@ const PortfolioWebsite = () => {
       <Projects />
       <StaticPart />
       <ContactMe />
+      <PortfolioFooter/>
     </div>
   );
 };
