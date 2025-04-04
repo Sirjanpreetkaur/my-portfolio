@@ -1,5 +1,36 @@
+.black_theme {
+  --background-primary: #1e1f26;
+  --background-secondary: #262834d1;
+  --background-teritory: #5c5959;
+  --color-primary: #fff;
+  --shadow-color-primary: #0006;
+}
+.white_theme {
+  --background-primary: #fff;
+  --background-secondary: #afafaf33;
+  --background-teritory: #9494944a;
+  --color-primary: #000;
+  --shadow-color-primary: #0006;
+}
+.color_div {
+  background: radial-gradient(circle, blue, var(--background-primary));
+  border: none;
+  border-radius: 50%;
+  box-shadow: 3px 0 347px blue;
+  height: 200px;
+  opacity: .5;
+  width: 200px;
+}
 .App {
+  background-color: var(--background-primary);
+  color: #fff;
+  font-family: Courier New, Courier, monospace;
+  min-height: 100vh;
   text-align: center;
+  overflow: hidden;
+}
+:not(svg):not(svg *) {
+  color: var(--color-primary);
 }
 
 .App-logo {
@@ -32,6 +63,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

@@ -12,7 +12,7 @@ import { SiGit } from "react-icons/si";
 import { SiWebpack } from "react-icons/si";
 import { FaArrowAltCircleUp, FaArrowAltCircleDown } from "react-icons/fa";
 
-const Skills = () => {
+const Skills = ({ theme }) => {
     const [staticSkill, setStaticSkill] = useState(false);
     const toggleSkill = () => {
         setStaticSkill(!staticSkill);
