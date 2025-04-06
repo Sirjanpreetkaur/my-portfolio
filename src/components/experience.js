@@ -13,7 +13,7 @@ const Experience = () => {
             <div class="experience-list">
                 <div class="experience-roles">
                     <div class="experience-role">
-                        <strong>SDE || (Frontend)</strong>
+                        <strong>SDE 2 (Frontend)</strong>
                         <div>Dec/2022 - present</div>
                     </div>
                     <div>

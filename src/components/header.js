@@ -16,9 +16,7 @@ const Header = () => {
                </h1>
             </div>
             <div class="content-secondary">
-              <p>I am a Frontend Developer with three years of experience. Recognized as a practical and effective developer,
-                experienced in leading cross-functional teams in a time-pressured setting to complete projects on schedule and
-                within budget.
+              <p>I'm a Frontend Developer with real-world experience in building fast, responsive, and accessible UIs. At Careers360, I contributed to high-impact projects using React.js and SSR techniques, ensuring smooth experiences across platforms.
               </p>
             </div>
           </div>
