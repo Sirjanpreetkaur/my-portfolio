@@ -70,7 +70,7 @@
     background-position: top;
     background-size: cover;
     height: 540px;
-    padding: 20px 200px;
+    padding: 20px;
     overflow: hidden;
 }
 
@@ -220,6 +220,7 @@
     padding: 10px;
     white-space: nowrap;
     width: max-content;
+    cursor: pointer;
 }
 
 .download_resume a svg {
@@ -237,7 +238,7 @@
 .projects-cover {
     display: flex;
     justify-content: space-between;
-    gap: 32px;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
@@ -263,6 +264,7 @@
 .project-technologies {
     color: #fff;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .project-link {
@@ -648,5 +650,8 @@ address {
     }
     .nav_list.theme{
         right:0px;
+    }
+    .experience-roles{
+        gap:4px;
     }
 }

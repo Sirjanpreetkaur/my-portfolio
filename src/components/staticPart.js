@@ -30,7 +30,7 @@ const StaticPart = () => {
           <address>
             <a href="mailto:sirjanpreetkaur43@gmail.com"><MdEmail /></a>
             <a href="tel:+919876491014"><FaPhoneSquareAlt/></a>
-            <a href="https://www.linkedin.com/in/sirjanpreet-kaur-aa262320b/"><FaLinkedin/></a>
+            <a href="https://www.linkedin.com/in/sirjan-preet-kaur/"><FaLinkedin/></a>
             <a href="https://api.whatsapp.com/send/?phone=9876491014&amp;text=Hi&amp;type=phone_number&amp;app_absent=0"><FaSquareWhatsapp/></a>
             <a href='javascript:void(0)' onClick={(e) => {
               e.preventDefault();

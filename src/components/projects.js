@@ -24,8 +24,7 @@ const Projects = () => {
                 {
                   project?.projectLink?.map((link, ind) => {
                     return (
-                      <a href={link?.link}>{link?.linkName} -></a>
-
+                      <a href={`${link?.link}`}>{`${link?.linkName} ->`}</a>
                     )
                   })
                 }
