@@ -529,7 +529,7 @@ address {
     padding-top: 28px;
   }
   .project-description {
-    max-height: 320px;
+    max-height: 360px;
   }
 
   .item {
@@ -538,7 +538,8 @@ address {
   }
 
   .item.active {
-    width: 72px;
+    width: max-content;
+    padding:0px 12px;
   }
 
   .website {
@@ -649,5 +650,17 @@ address {
   }
   .experience-roles {
     gap: 20px;
+  }
+  .nav_bar{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 20px;
+    padding: 28px 12px 0px 12px;
+  }
+  .nav_list{
+    width: 285px;
+    justify-content: space-between;
   }
 }
