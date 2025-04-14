@@ -2,37 +2,42 @@
 import React from "react";
 
 const TextToSpeech = ({ text, rate = 1, pitch = 1, volume = 1 }) => {
-  // Function to trigger speech synthesis
   const speak = () => {
-    // Check if the API is supported
     if ("speechSynthesis" in window) {
-      // Create a new utterance
       const utterance = new SpeechSynthesisUtterance(text);
+      utterance.rate = rate;
+      utterance.pitch = pitch;
+      utterance.volume = volume;
 
-      // Set optional properties
-      utterance.rate = rate;     // Speed of speech (default is 1)
-      utterance.pitch = pitch;   // Tone of speech (default is 1)
-      utterance.volume = volume; // Volume (0 to 1, default is 1)
+      // Helper function to set the female voice and speak
+      const setFemaleVoiceAndSpeak = () => {
+        const voices = window.speechSynthesis.getVoices();
+        const femaleVoice = voices.find(voice => voice.name.toLowerCase().includes("female"));
+        if (femaleVoice) {
+          utterance.voice = femaleVoice;
+          window.speechSynthesis.speak(utterance);
+        } else {
+          // If still no female voice is found after voices have loaded, alert the user.
+          alert("No female voice available on your browser.");
+        }
+      };
 
-      // Choose a female voice if available
-      const voices = window.speechSynthesis.getVoices();
-      // Attempt to find a voice with "female" in its name
-      const femaleVoice = voices.find(voice => voice.name.toLowerCase().includes("female"));
-      if (femaleVoice) {
-        utterance.voice = femaleVoice;
-      } else if (voices.length > 0) {
-        // Fallback to the first available voice if no female voice is found
-        utterance.voice = voices[0];
+      let voices = window.speechSynthesis.getVoices();
+      if (voices.length === 0) {
+        // Voices aren't loaded yet, so wait for the voiceschanged event
+        window.speechSynthesis.onvoiceschanged = () => {
+          setFemaleVoiceAndSpeak();
+          // Remove the event listener once voices are loaded to prevent multiple calls
+          window.speechSynthesis.onvoiceschanged = null;
+        };
+      } else {
+        setFemaleVoiceAndSpeak();
       }
-
-      // Speak the utterance
-      window.speechSynthesis.speak(utterance);
     } else {
       alert("Sorry, your browser does not support text-to-speech functionality.");
     }
   };
 
-  // Function to cancel the speech
   const stopSpeech = () => {
     window.speechSynthesis.cancel();
   };
