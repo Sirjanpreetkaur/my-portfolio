@@ -19,7 +19,7 @@ const WelcomeStrip = ({ company, fadeOut}) => {
   
   return (
     <div className={`welcome-strip ${fadeOut ? 'fade-out' : ''}`}>
-      <h2 className={showH2 ? 'fade-in' : ''}>Hello {company} !!!</h2>
+      <h2 className={showH2 ? 'fade-in' : ''}>Hello {company}</h2>
       <h3 className={showH3 ? 'fade-in' : ''}>Welcome to my Portfolio</h3>
     </div>
   );
