@@ -10,9 +10,9 @@ const Experience = () => {
             <div className='experience-years'>
                 3.6 Years of Experience
             </div>
-            <div class="experience-list">
-                <div class="experience-roles">
-                    <div class="experience-role">
+            <div className="experience-list">
+                <div className="experience-roles">
+                    <div className="experience-role">
                         <strong>SDE 2 (Frontend)</strong>
                         <div>Dec/2021 - present</div>
                     </div>
@@ -20,8 +20,8 @@ const Experience = () => {
                         <h5>CAREERS360</h5>
                     </div>
                 </div>
-                <div class="experience-roles">
-                    <div class="experience-role">
+                <div className="experience-roles">
+                    <div className="experience-role">
                         <strong>Frontend Developer</strong>
                         <div>June/2021 - August/2021</div>
                     </div>

@@ -24,9 +24,9 @@ const StaticPart = () => {
     }
   };
   return (
-    <div class="static_part">
-      <div class="contact_details">
-        <div class="address-container">
+    <div className="static_part">
+      <div className="contact_details">
+        <div className="address-container">
           <address>
             <a href="mailto:sirjanpreetkaur43@gmail.com"><MdEmail /></a>
             <a href="tel:+919876491014"><FaPhoneSquareAlt/></a>

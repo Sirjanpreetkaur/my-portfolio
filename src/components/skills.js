@@ -111,7 +111,7 @@ const Skills = ({ theme }) => {
                     })
                     }
                 </div>}
-                <div class="toggle_text">
+                <div className="toggle_text">
                     <button onClick={toggleSkill}>
                         {staticSkill ? (
                             <>Show All <FaArrowAltCircleDown /></>

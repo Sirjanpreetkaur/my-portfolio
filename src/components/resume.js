@@ -27,12 +27,12 @@ const Resume = () => {
 
     return (
         <div className='experience-cover'>
-            <div class="download_resume">
+            <div className="download_resume">
                 <span>My Resume </span>
-                <a href="https://drive.google.com/file/d/1YzsmnF5f1UHLCzywZAs9xoFHxKsL6mFj/view?usp=sharing" class="view-resume" target="_blank">
+                <a href="https://drive.google.com/file/d/1YzsmnF5f1UHLCzywZAs9xoFHxKsL6mFj/view?usp=sharing" className="view-resume" target="_blank">
                     <FaEye />
                 </a>
-                <a onClick={() => downloadPDF(ResumeCV)} class="download-resume">
+                <a onClick={() => downloadPDF(ResumeCV)} className="download-resume">
                     <FaDownload />
                 </a>
             </div>
