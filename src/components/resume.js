@@ -1,11 +1,10 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import { FaEye } from "react-icons/fa";
-import { FaDownload } from "react-icons/fa6";
+import { FaEye, FaDownload } from "react-icons/fa";
 import "../assets/css/portfolio.css"
 import ResumeCV from "../assets/pdf/resume.pdf"
 
-
+const resumeUrl = "https://drive.google.com/file/d/1YzsmnF5f1UHLCzywZAs9xoFHxKsL6mFj/view?usp=sharing";
 
 const Resume = () => {
     const downloadPDF = async (pdfUrl) => {
@@ -23,21 +22,21 @@ const Resume = () => {
         } catch (error) {
             console.error('Error downloading the PDF:', error);
         }
-    };
+  };
 
-    return (
+  return (
         <div className='experience-cover'>
-            <div className="download_resume">
-                <span>My Resume </span>
-                <a href="https://drive.google.com/file/d/1YzsmnF5f1UHLCzywZAs9xoFHxKsL6mFj/view?usp=sharing" className="view-resume" target="_blank">
-                    <FaEye />
-                </a>
+      <div className="download_resume">
+        <span>My Resume</span>
+        <a href={resumeUrl} target="_blank" rel="noopener noreferrer" className="view-resume">
+          <FaEye />
+        </a>
                 <a onClick={() => downloadPDF(ResumeCV)} className="download-resume">
-                    <FaDownload />
-                </a>
-            </div>
-        </div>
-    )
-}
+          <FaDownload />
+        </a>
+      </div>
+    </div>
+  );
+};
 
-export default Resume
+export default Resume;

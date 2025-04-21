@@ -231,6 +231,15 @@
   width: 24px;
 }
 
+.download_resume + div {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: var(--background-primary);
+  border: 1px dashed var(--background-teritory);
+  display: inline-block;
+  border-radius: 8px;
+}
+
 /* projects */
 .projects-cover {
   display: flex;
