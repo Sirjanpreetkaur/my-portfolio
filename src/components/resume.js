@@ -16,7 +16,7 @@ const Resume = () => {
       const link = document.createElement("a");
       link.href = url;
       const timestamp = new Date().getTime();
-      link.setAttribute("download", `${"resume"}_${timestamp}.pdf`);
+      link.setAttribute("download", `${"sirjanpreet_kaur_resume"}.pdf`);
       document.body.appendChild(link);
       link.click();
       link.parentNode.removeChild(link);
