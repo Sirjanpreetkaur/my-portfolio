@@ -26,7 +26,6 @@ const sections = [
 ];
 
 const PortfolioWebsite = ({ theme, setTheme }) => {
-  // Set a valid initial activeSection
   const [activeSection, setActiveSection] = useState(sections[0].id);
   const [company, setCompany] = useState("");
   const [showStrip, setShowStrip] = useState(true);
