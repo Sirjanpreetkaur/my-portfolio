@@ -8,7 +8,7 @@ const Experience = () => {
     return (
         <div className='experience-cover'>
             <div className='experience-years'>
-                3.6 Years of Experience
+                3.7 Years of Experience
             </div>
             <div className="experience-list">
                 <div className="experience-roles">
