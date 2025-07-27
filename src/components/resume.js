@@ -5,7 +5,7 @@ import "../assets/css/portfolio.css";
 import ResumeCV from "../assets/pdf/resume.pdf";
 
 const resumeUrl =
-  "https://drive.google.com/file/d/16RKCznZ-6eMskb3-10OCJGmd02n-g8wz/view?usp=sharing";
+  "https://drive.google.com/file/d/1hc8QGqbNu-_cNNORQBQYO1T9C_UCnqUF/view?usp=sharing";
 
 const Resume = () => {
   const downloadPDF = async (pdfUrl) => {
