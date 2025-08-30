@@ -277,6 +277,8 @@
   color: #fff;
   width: 100%;
   padding: 0px 12px 12px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .project-link a {
