@@ -1,43 +1,36 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
 import { FaEye, FaDownload } from "react-icons/fa";
 import "../assets/css/portfolio.css";
-import ResumeCV from "../assets/pdf/resume.pdf";
 
-const resumeUrl =
-  "https://drive.google.com/file/d/1n4UwsiNBc7_EmATGYTzb8GbeJhpL85J7/view?usp=sharing";
+// Use your file ID only once
+const fileId = "1XR1uiIgC9vRssU07PASa6-z9ikGJyJXH";
+
+// Generate view & download links dynamically
+const resumeViewUrl = `https://drive.google.com/file/d/${fileId}/view?usp=sharing`;
+const resumeDownloadUrl = `https://drive.google.com/uc?export=download&id=${fileId}`;
 
 const Resume = () => {
-  const downloadPDF = async (pdfUrl) => {
-    try {
-      const response = await fetch(pdfUrl);
-      const blob = await response.blob();
-      const url = window.URL.createObjectURL(new Blob([blob]));
-      const link = document.createElement("a");
-      link.href = url;
-      const timestamp = new Date().getTime();
-      link.setAttribute("download", `${"sirjanpreet_kaur_resume"}.pdf`);
-      document.body.appendChild(link);
-      link.click();
-      link.parentNode.removeChild(link);
-    } catch (error) {
-      console.error("Error downloading the PDF:", error);
-    }
-  };
-
   return (
     <div className="experience-cover">
       <div className="download_resume">
         <span>My Resume</span>
+
+        {/* View Resume (opens in new tab) */}
         <a
-          href={resumeUrl}
+          href={resumeViewUrl}
           target="_blank"
           rel="noopener noreferrer"
           className="view-resume"
         >
           <FaEye />
         </a>
-        <a onClick={() => downloadPDF(ResumeCV)} className="download-resume">
+
+        {/* Download Resume (always latest version) */}
+        <a
+          href={resumeDownloadUrl}
+          download="sirjanpreet_kaur_resume.pdf"
+          className="download-resume"
+        >
           <FaDownload />
         </a>
       </div>
