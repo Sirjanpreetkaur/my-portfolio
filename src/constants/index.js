@@ -11,8 +11,8 @@ export const ProjectList = [
     projectDesc:
       "QR-based ordering system to view menus, manage carts, place table-specific orders, and download receipts. Integrated Razorpay for secure UPI/card payments.",
     projectLink: [
-      { linkName: "GitHub Repo", link: "https://github.com/your-username/qr-menu" },
-      { linkName: "Live Demo", link: "https://qr-menu.vercel.app" },
+      { linkName: "GitHub Repo", link: "https://github.com/Sirjanpreetkaur/qr-menu-ordering" },
+      { linkName: "Live Demo", link: "https://qr-menu-ordering-virid.vercel.app/" },
     ],
     technologies: [
       { name: "HTML" },
